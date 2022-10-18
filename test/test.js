@@ -817,7 +817,7 @@ describe("follow-redirects", function () {
 
             assert.equal(redirects[0].url, "http://localhost:3600/a");
             assert.equal(redirects[0].statusCode, 302);
-            assert.equal(redirects[0].headers["content-type"], "text/plain; charset=utf-8");
+            assert.equal(redirects[1].headers["content-type"], "text/plain; charset=utf-8");
 
             assert.equal(redirects[1].url, "http://localhost:3600/b");
             assert.equal(redirects[1].statusCode, 302);
